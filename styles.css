@@ -89,8 +89,8 @@ body::before {
   height: 500%;
 }
 
-.mt-10 {
-  margin-top: 10rem;
+.mt-20 {
+  margin-top: 20rem;
 }
 
 .large {
@@ -158,8 +158,22 @@ nav .header__links .logo p {
      object-fit: cover;
 }
 
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.huge {
+  font-size: 10rem;
+}
+
 .top-0 {
-  top: 0;
+  top: 0 !important;
 }
 
 .top-20 {
@@ -222,18 +236,18 @@ nav .header__links .logo p {
           transform: translate(-50%, -50%);
 }
 
+.hastags {
+  position: relative;
+  top: 60%;
+  text-align: center;
+}
+
 .small {
   font-size: 4.2rem;
 }
 
 .video {
   text-align: center;
-}
-
-.rt {
-  position: relative;
-  margin-top: 10rem;
-  font-size: 12rem;
 }
 
 .fullscreen {
@@ -244,24 +258,27 @@ nav .header__links .logo p {
 }
 
 .ftsz-10 {
-  font-size: 10rem;
+  font-size: 10rem !important;
 }
 
-.hastags {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.ftsz-6 {
+  font-size: 6rem !important;
+}
+
+.top--10 {
+  top: -10% !important;
 }
 
 @media screen and (max-width: 860px) {
-  video {
-    height: 400px;
-    width: 400px;
+  .ftsz-6 {
+    font-size: 4rem !important;
   }
-  .hastags {
-    top: 70%;
+  .ftsz-10 {
+    font-size: 5rem !important;
+  }
+  video {
+    height: 450px;
+    width: 450px;
   }
   * {
     -webkit-user-select: none;
@@ -303,24 +320,20 @@ nav .header__links .logo p {
   .hero img {
     height: 75%;
   }
-  .rt {
-    font-size: 8rem;
-  }
   .fullscreen {
     font-size: 8rem;
+    top: 40%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .rt {
-    position: relative;
-    margin-top: 6rem;
-    font-size: 6rem;
+  .mt-20 {
+    margin-top: 0;
   }
   .fullscreen {
     font-size: 6rem;
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 15%;
   }
   video {
@@ -396,11 +409,14 @@ nav .header__links .logo p {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
   }
-  .shrinked {
-    display: none;
-  }
   .hide-300 {
     display: none;
+  }
+}
+
+@media screen and (max-height: 310px) {
+  .hero {
+    margin-bottom: 10rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
