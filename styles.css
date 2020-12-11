@@ -249,7 +249,7 @@ nav .header__links .logo p {
 
 .hastags {
   position: absolute;
-  top: 70%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -259,6 +259,9 @@ nav .header__links .logo p {
   video {
     height: 400px;
     width: 400px;
+  }
+  .hastags {
+    top: 70%;
   }
   * {
     -webkit-user-select: none;
