@@ -60,6 +60,10 @@ li{
     list-style-type: none;
 }
 
+.shrinked{
+    display: block;
+}
+
 .underline_container{
     text-decoration: line-through;
     color: var(--text-color);
@@ -167,13 +171,13 @@ nav{
             font-size: 2rem;
         }
 
-    .header__links--left{
+    .hide{
         display: none;
     }
      
 
     .container{
-        width: 90%;
+        width: 80%;
         margin: auto;
         overflow: hidden;
     }
@@ -212,8 +216,7 @@ nav{
         }
 
         .hero__Info--1{
-           width: 50%;
-           margin-left: 1rem;
+           width: 55%;
             
         }
 
@@ -228,6 +231,24 @@ img{
 }
 
         }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 300px)
+{
+
+   *{user-select: none; 
+            -webkit-tap-highlight-color:rgba(0, 0, 0, 0);   
+        outline: none;}
+
+  .shrinked{
+      display: none;
+  }
 
 
 }
