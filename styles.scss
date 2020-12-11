@@ -75,7 +75,7 @@ li{
 body{
     background: var(--background-color);
     color: var(--text-color);
-    overflow: hidden;
+    overflow-x: hidden;
     font-size: 4rem;
     &::before{
         content: '';
@@ -90,6 +90,11 @@ body{
     }
 }
 
+.large{
+    font-size: 10rem;
+}
+
+
 .replaced{
     text-decoration: none !important;
     position: absolute;
@@ -97,6 +102,15 @@ body{
     right: 0;
     font-size: 6rem;
 }
+
+.replaced--2{
+    
+    top: 80%;
+    right: 50%;
+
+}
+
+
 
 .underlined{
     font-size: 6rem;
@@ -125,21 +139,85 @@ nav{
 }
 
 
+.heading-strong{
+    
+}
+    .line{
+        position: relative;
+        top: 0;
+
+
+        top: 0;
+        text-decoration: line-through;
+        color: var(--secondary-color);
+    }
+
+    .replaced{
+        position: absolute;
+        top: 90%;
+   
+        color :white;
+    }
+
+
+.object-fit{
+    object-fit: cover;
+}
+
+.top-0{
+    top: 0;
+}
+
+.top-20{
+    top: 20% !important;
+}
+
+.width-55{
+    width: 55%;
+}
+
+.width-80{width: 80%;}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.right--200{
+    right: -200% !important;
+}
+
+.right-10{
+    right: 10% !important;
+}
+
+.width-70{
+    width: 70%;
+}
+
+.width-100{
+    width: 100%;
+}
+
 .hero{
     position: relative;
     height: 100vh;
     width: 100%;
+    margin-bottom: 20rem;
 
     &__Info--1{
         position: absolute;
-        top: 20%;
+        top:0;
     }
 
 
     &__Info--2{
         position: absolute;
         top: 70%;
-        right: 20%;
+      right: 20%;
+    }
+
+    .right-0{
+        right: 0% !important;
     }
 
 
@@ -155,6 +233,8 @@ nav{
 
 
 }
+
+
 
 
 
@@ -204,8 +284,12 @@ nav{
 }
 
 
-.hero img{
+.hero{
+    margin-bottom: 0;
+
+ img{
     height: 75%;
+}
 }
 
 
@@ -242,6 +326,10 @@ nav{
             
         }
 
+        .replaced--2{
+            top: 90%;
+        }
+
         .hero__Info--1{
            width: 70%;
             right: 25%;
@@ -250,8 +338,8 @@ nav{
 
 .hero__Info--2{
          
-            right: 0;
-            top: 80%;
+            right: 0 !important;
+            top: 70%;
         }
 
 
