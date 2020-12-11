@@ -113,7 +113,7 @@ nav{
 
          display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         width: 100%;
         height: 6rem;
             .logo p{
@@ -126,7 +126,9 @@ nav{
 
 
 .hero{
-
+    position: relative;
+    height: 100vh;
+    width: 100%;
 
     &__Info--1{
         position: absolute;
@@ -142,13 +144,8 @@ nav{
 
 
 
- &__image{
-         position: relative;
-         height: 100vh;
-         top: 55%;
-
      img{
-         height: 100%;
+        height: 100%;
          position: absolute;
          top:45%;
          z-index: -50;
@@ -156,7 +153,6 @@ nav{
          transform: translate(-50%, -50%); 
     }
 
- }
 
 }
 
@@ -167,22 +163,8 @@ nav{
 
 @media screen and (max-width: 860px)
 {
-      body{
-            font-size: 2rem;
-        }
 
-    .hide{
-        display: none;
-    }
-     
-
-    .container{
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-    }
-
- *{
+    *{
 
             user-select: none; 
             -webkit-tap-highlight-color:rgba(0, 0, 0, 0);   
@@ -190,7 +172,15 @@ nav{
                         }
 
 
-                        
+      body{
+            font-size: 2rem;
+            
+        }
+
+    .hide{
+        display: none;
+    }
+             
         .underlined{
             font-size: 4rem;
         }
@@ -199,13 +189,49 @@ nav{
             font-size: 4rem;
         }
 
+
+         nav .header__links{
+
+         display: flex;
+        justify-content: space-between;
+        align-items: center;
+            .logo p{
+            font-size: 2rem;
+        }
+
+
+
+}
+
+
+.hero img{
+    height: 75%;
+}
+
+
 }
 
 
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 450px)
 {
+
+      .underlined{
+            font-size: 3rem;
+        }
+
+        .replaced{
+            font-size: 3rem;
+        }
+
+    nav{
+       justify-content: center;
+    }
+
+    .hero{
+        height: 80vh;
+    }
 
    *{user-select: none; 
             -webkit-tap-highlight-color:rgba(0, 0, 0, 0);   
@@ -213,33 +239,44 @@ nav{
 
         body{
             font-size: 2rem;
-        }
-
-        .hero__Info--1{
-           width: 55%;
             
         }
 
-        .hero__image{
-            display: block;
-            position: unset;
-height: 60vh;
-            margin: auto;
+        .hero__Info--1{
+           width: 60%;
+            right: 35%;
+            top: 10%;
+        }
 
-img{
-    height: 50%;
-}
-
+.hero__Info--2{
+         
+          
+            top: 90%;
         }
 
 
+        .logo p{
+            font-size: 1.4rem !important;
+        }
+
+
+a{
+    font-size: 1.4rem;
+}
+
+      
+.hero img{
+    height: 60%;
+}
+
+
 }
 
 
 
 
 
-@media screen and (max-width: 300px)
+@media screen and (max-width: 310px)
 {
 
    *{user-select: none; 
@@ -247,6 +284,10 @@ img{
         outline: none;}
 
   .shrinked{
+      display: none;
+  }
+
+  .hide-300{
       display: none;
   }
 
