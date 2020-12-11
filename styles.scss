@@ -182,9 +182,9 @@ nav{
     margin-left: auto;
 }
 
-.right--200{
-    right: -200% !important;
-}
+// .right--200{
+//     right: -200% !important;
+// }
 
 .right-10{
     right: 10% !important;
@@ -301,12 +301,20 @@ nav{
 @media screen and (max-width: 450px)
 {
 
+    .large{
+        font-size: 6rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
       .underlined{
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         .replaced{
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
     nav{
@@ -339,8 +347,13 @@ nav{
 .hero__Info--2{
          
             right: 0 !important;
+           
             top: 70%;
         }
+
+        // .width-55{
+        //     width: 100% !important;
+        // }
 
 
         .logo p{

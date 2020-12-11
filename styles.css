@@ -174,10 +174,6 @@ nav .header__links .logo p {
   margin-left: auto;
 }
 
-.right--200 {
-  right: -200% !important;
-}
-
 .right-10 {
   right: 10% !important;
 }
@@ -266,11 +262,17 @@ nav .header__links .logo p {
 }
 
 @media screen and (max-width: 450px) {
+  .large {
+    font-size: 6rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
   .underlined {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .replaced {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   nav {
     -webkit-box-pack: center;
