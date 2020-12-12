@@ -212,6 +212,10 @@ nav{
     width: 100%;
 }
 
+.india-map{
+    height: 70% !important;
+}
+
 .hero{
     position: relative;
     height: 100vh;
@@ -248,6 +252,14 @@ nav{
 
 }
 
+small{
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+footer{
+    text-align: center;
+}
 
 .hastags{
     position: relative;
@@ -364,7 +376,9 @@ video{
 
 @media screen and (max-width: 450px)
 {
-
+.india-map{
+    height: 60% !important;
+}
 
     .mt-20{
         margin-top: 0;

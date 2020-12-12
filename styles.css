@@ -205,6 +205,10 @@ nav .header__links .logo p {
   width: 100%;
 }
 
+.india-map {
+  height: 70% !important;
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -235,6 +239,15 @@ nav .header__links .logo p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+small {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+footer {
+  text-align: center;
 }
 
 .hastags {
@@ -328,6 +341,9 @@ nav .header__links .logo p {
 }
 
 @media screen and (max-width: 450px) {
+  .india-map {
+    height: 60% !important;
+  }
   .mt-20 {
     margin-top: 0;
   }
